@@ -116,7 +116,9 @@ STATIC_URL = '/static/'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 LOGIN_REDIRECT_URL = 'home:home'
-
 LOGIN_URL = 'login'
+
+
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
 django_heroku.settings(locals())
