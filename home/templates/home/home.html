@@ -1,0 +1,56 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'home/styles/home.css' %}">
+{% endblock %}
+
+{% block content %}
+<header class="showcase">
+    <div class="content">
+        <img src="{% static 'home/images/brainlogo.png' %}" alt="Brainy Haven" class="logo">
+        <div class="title">
+            Welcome To Brainy Haven!
+        </div>
+        <div class="text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, obcaecati.
+        </div>
+    </div>
+</header>
+<section class="services">
+    <div class="my-container grid-3">
+        <div class="center">
+            <i class="fa fa-rocket fa-3x"></i>
+            <h3>Improve</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, deserunt?</p>
+        </div>
+        <div class="center">
+            <i class="fa fa-flask fa-3x"></i>
+            <h3>Science</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, deserunt?</p>
+        </div>
+        <div class="center">
+            <i class="fa fa-cube fa-3x"></i>
+            <h3>Puzzles</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, deserunt?</p>
+        </div>
+    </div>
+</section>
+<section class="contact bg-light">
+    <div class="my-container">
+        <div class="grid-2">
+            <div class="center">
+                <i class="fa fa-laptop-code fa-10x"></i>
+            </div>
+            <div>
+                <h3>Our Goal</h3>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio velit repellat sequi
+                    tenetur! Numquam nisi rerum vel, earum sequi iusto culpa. Corrupti maiores aliquam
+                    magnam ipsum dicta nisi ad assumenda?
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
