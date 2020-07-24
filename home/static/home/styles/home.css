@@ -127,10 +127,6 @@ header h1 {
 
 
 @media(max-width: 560px) {
-    .showcase::after {
-        height: 70vh;
-    }
-
     .content {
         top: 20%;
         margin-top: 5px;
