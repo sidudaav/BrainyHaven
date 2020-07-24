@@ -118,7 +118,7 @@ h3 {
 
 @media(max-width: 560px) {
     header {
-        height: 160vh;
+        height: 180vh;
     }
 
     .content {
