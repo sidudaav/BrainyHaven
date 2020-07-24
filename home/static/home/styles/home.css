@@ -22,8 +22,8 @@ h3 {
 }
 
 .showcase:hover .content {
-    filter: blur(2px);
-    -webkit-filter: blur(2px);    
+    filter: blur(0px);
+    -webkit-filter: blur(0px);    
 }
 
 .content {
