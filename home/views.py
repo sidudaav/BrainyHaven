@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.contrib.auth.decorators import login_required
 
 def home(request):
     context = {
@@ -11,3 +12,10 @@ def about(request):
         'title': 'About',
     }
     return render(request, 'home/about.html', context)
+
+@login_required
+def program(request):
+    context = {
+        'title': 'Program',
+    }
+    return render(request, 'home/program.html', context)
