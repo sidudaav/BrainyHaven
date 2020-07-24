@@ -14,11 +14,11 @@ $.ajaxSetup({
     }
 });
 
-$(document).ready(function () {
+/* $(document).ready(function () {
     $(window).on("beforeunload", function (e) {
         $.get('/logout/',
             {
 
             })
     });
-});
+}); */
