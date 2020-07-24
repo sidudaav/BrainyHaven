@@ -61,8 +61,9 @@ header {
 
 .team .team_member{
     background: #fff;
-    margin: 10px;
-    margin-bottom: 50px;
+    margin-right: 30px;
+    margin-top: 30px;
+    margin-bottom: 60px;
     width: 300px;
     padding: 20px;
     line-height: 20px;
@@ -85,18 +86,18 @@ header {
 
 .team .team_member .team_img{
     position: absolute;
-    top: -50px;
+    top: -65px;
     left: 50%;
     transform: translateX(-50%);
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
-    background: #fff;
+    background: black;
 }
 
 .team .team_member .team_img img{
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
     padding: 5px;
 }
 
