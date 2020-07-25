@@ -13,6 +13,12 @@ def about(request):
     }
     return render(request, 'home/about.html', context)
 
+def science(request):
+    context = {
+        'title': 'Science',
+    }
+    return render(request, 'home/science.html', context)
+
 @login_required
 def program(request):
     context = {
