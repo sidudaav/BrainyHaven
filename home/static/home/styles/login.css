@@ -20,7 +20,11 @@
     background-repeat: no-repeat;
     background-position: center;
     display: block;
-    filter: blur(10px);
-    -webkit-filter: blur(10px);
+    filter: blur(20px);
+    -webkit-filter: blur(20px);
     transition: all 500ms;
+}
+
+.btn {
+  background-color: blue;
 }
