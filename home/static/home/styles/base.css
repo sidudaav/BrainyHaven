@@ -55,3 +55,11 @@ footer p {
 #copyright {
     padding: 2rem;
 }
+
+i {
+    color: lightblue
+}
+
+.bg-light i {
+    color: darkblue
+}
