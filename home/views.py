@@ -22,6 +22,34 @@ def science(request):
 @login_required
 def program(request):
     context = {
-        'title': 'Program',
+        'title': 'Program'
     }
     return render(request, 'home/program.html', context)
+
+@login_required
+def patterns(request):
+    context = {
+        'title': 'Patterns',
+    }
+    return render(request, 'home/patterns.html', context)
+
+@login_required
+def analogies(request):
+    context = {
+        'title': 'Analogies',
+    }
+    return render(request, 'home/analogies.html', context)
+
+@login_required
+def puzzles(request):
+    context = {
+        'title': 'Puzzles',
+    }
+    return render(request, 'home/puzzles.html', context)
+
+@login_required
+def memory(request):
+    context = {
+        'title': 'Memory',
+    }
+    return render(request, 'home/memory.html', context)

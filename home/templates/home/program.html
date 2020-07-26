@@ -5,6 +5,59 @@
 <link rel="stylesheet" type="text/css" href="{% static 'home/styles/program.css' %}">
 {% endblock %}
 
-{% block content %}
+{% block js %}
+<script src="{% static 'home/js/program.js' %}"></script>
+{% endblock %}
 
+{% block content %}
+<header>
+    <div class="my-header-container content center">
+        <div class="grid-2">
+            <div>
+                <h3 class="title">Patterns</h3>
+                <p class="text">
+                    Figure out wha number or letter comes next!
+                </p>
+                <a href="{% url 'home:patterns' %}">
+                    <button class="btn btn-outline-primary btn-lg">
+                        Patterns
+                    </button>
+                </a>
+            </div>
+            <div>
+                <h3 class="title">Analogies</h3>
+                <p class="text">
+                    Use words to find a continuation!
+                </p>
+                <a href="{% url 'home:analogies' %}">
+                    <button class="btn btn-outline-primary btn-lg">
+                        Analogies
+                    </button>
+                </a>
+            </div>
+            <div>
+                <h3 class="title">Puzzles</h3>
+                <p class="text">
+                    Check out some Sudoku puzzles and some Crosswords!
+                </p>
+                <a href="{% url 'home:puzzles' %}">
+                    <button class="btn btn-outline-primary btn-lg">
+                        Puzzles
+                    </button>
+                </a>
+            </div>
+            <div>
+                <h3 class="title">Memory Game</h3>
+                <p class="text">
+                    Check out our memory game and guess the colors!
+                </p>
+                <a href="{% url 'home:memory' %}">
+                    <button class="btn btn-outline-primary btn-lg">
+                        Memory
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
 {% endblock %}
