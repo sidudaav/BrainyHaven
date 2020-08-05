@@ -1,8 +1,8 @@
 .my-container {
-    max-width: 960px;
+    max-width: 1300px;
     margin: auto;
     overflow: hidden;
-    padding: 4rem 1rem;
+    padding: 4rem 4rem;
 }
 
 .grid-2 {
@@ -19,10 +19,15 @@
 @media(max-width: 560px) {
     .grid-2 {
         grid-template-columns: 1fr;
+        gap: 40px;
     }
 
     .riddles .grid-2 div.answer {
         border-bottom: #333 dashed 1px;
         padding: 1.2rem 1rem;
+    }
+
+    button.answer-btn {
+        margin-bottom: 1rem;
     }
 }

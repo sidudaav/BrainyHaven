@@ -19,10 +19,15 @@
 @media(max-width: 560px) {
     .grid-2 {
         grid-template-columns: 1fr;
+        gap: 40px;
     }
 
     .patterns .grid-2 div.answer {
         border-bottom: #333 dashed 1px;
         padding: 1.2rem 1rem;
+    }
+
+    button.answer-btn {
+        margin-bottom: 1rem;
     }
 }
