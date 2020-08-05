@@ -53,3 +53,10 @@ def memory(request):
         'title': 'Memory',
     }
     return render(request, 'home/memory.html', context)
+
+@login_required
+def riddles(request):
+    context = {
+        'title': 'Riddles',
+    }
+    return render(request, 'home/riddles.html', context)

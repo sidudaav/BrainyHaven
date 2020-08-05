@@ -12,4 +12,5 @@ urlpatterns = [
     path('analogies/', views.analogies, name='analogies'),
     path('memory/', views.memory, name='memory'),
     path('puzzles/', views.puzzles, name='puzzles'),
+    path('riddles/', views.riddles, name='riddles'),
 ]

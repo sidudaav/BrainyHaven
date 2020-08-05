@@ -1,5 +1,5 @@
 header {
-    height: 100vh;
+    height: 130vh;
     width: 100%;
     transition: all 500ms;
 }
@@ -42,7 +42,7 @@ header {
 
 @media(max-width: 560px) {
     header {
-        height: 180vh;
+        height: 200vh;
     }
 
     .content {

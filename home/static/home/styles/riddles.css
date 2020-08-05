@@ -1,0 +1,28 @@
+.my-container {
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 4rem 1rem;
+}
+
+.grid-2 {
+    display: grid;
+    gap: 80px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 40px;
+}
+
+.riddles .pattern-answer {
+    display: none;
+}
+
+@media(max-width: 560px) {
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .riddles .grid-2 div.answer {
+        border-bottom: #333 dashed 1px;
+        padding: 1.2rem 1rem;
+    }
+}
