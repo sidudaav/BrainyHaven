@@ -115,6 +115,46 @@ header h1 {
 	margin: 10px 0;
 }
 
+section.michigan .img-container {
+    position: relative;
+    width: 75%;
+}
+  
+section.michigan img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+  
+section.michigan .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+section.michigan .middle .text a {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+  
+section.michigan .img-container:hover img{
+    opacity: 0.1;
+}
+  
+.img-container:hover .middle {
+    opacity: 1;
+}
+
 @media (max-width: 700px) {
 	.counters .counters-container {
 		grid-template-columns: repeat(1, 1fr);
