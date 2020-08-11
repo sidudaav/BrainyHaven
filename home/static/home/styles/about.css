@@ -1,7 +1,6 @@
 header {
     height: 100vh;
     width: 100%;
-    transition: all 500ms;
 }
 
 .my-container {
@@ -146,12 +145,6 @@ h3 {
     .icons div {
         border-bottom: #333 dashed 1px;
         padding: 1.2rem 1rem;
-    }
-}
-
-@media(max-width: 560px) {
-    .team .team_member{
-        margin-right: auto;
     }
 }
 

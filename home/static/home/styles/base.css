@@ -48,6 +48,11 @@ a.nav-link {
     background: #333;
 }
 
+.bg-mint {
+    color: #f4f4f4;
+    background-color:  #3eb489;
+}
+
 footer p {
     margin: 0rem;
 }
@@ -57,9 +62,9 @@ footer p {
 }
 
 i {
-    color: lightblue
+    color: white
 }
 
 .bg-light i {
-    color: darkblue
+    color: black
 }
