@@ -8,3 +8,7 @@
 .sudoku {
     margin: 30px;
 }
+
+.sudoku IFRAME {
+    transform: scale(1.5)
+}
