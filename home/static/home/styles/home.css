@@ -117,7 +117,9 @@ header h1 {
 
 section.michigan .img-container {
     position: relative;
-    width: 75%;
+    width: 70%;
+    margin: auto;
+    width: 50%;
 }
   
 section.michigan img {
@@ -141,10 +143,9 @@ section.michigan .middle {
 }
 
 section.michigan .middle .text a {
-    background-color: #4CAF50;
-    color: white;
-    font-size: 16px;
-    padding: 16px 32px;
+    font-weight: 800;
+    font-size: larger;
+    color: darkgreen
 }
   
 section.michigan .img-container:hover img{
