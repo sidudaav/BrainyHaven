@@ -11,12 +11,6 @@
     grid-template-columns: repeat(2, 1fr);
 }
 
-.grid-2 {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
-}
-
 .grid-3 {
     margin: auto;
     overflow: hidden;
@@ -40,8 +34,20 @@ h3 {
         grid-template-columns: 1fr;
     }
 
+    .grid-3 div, .grid-2 div {
+        padding: 1.2rem 1rem;
+    }
+
+    .brain-parts .grid-3 div {
+        padding: 1.2rem 1rem;
+    }
+
     .brain-parts .grid-3 div {
         border-bottom: #333 dashed 1px;
         padding: 1.2rem 1rem;
+    }
+
+    .brain-parts .grid-3 div:last-child {
+        border: none;
     }
 }

@@ -2,6 +2,10 @@ h3 {
     font-weight: 600;
 }
 
+h1 {
+    font-weight: 600;
+}
+
 .showcase::after {
     content: '';
     height: 100vh;
@@ -143,6 +147,13 @@ section.michigan .img-container:hover img{
     opacity: 1;
 }
 
+section.introduction .grid-2 {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+}
+
 @media (max-width: 700px) {
 	.counters .counters-container {
 		grid-template-columns: repeat(1, 1fr);
@@ -179,9 +190,38 @@ section.michigan .img-container:hover img{
         grid-template-columns: 1fr;
     }
 
-    .services div {
+    .grid-2 div {
+        padding: 1.2rem 1rem;
+    }
+
+    section.introduction .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    section.introduction .grid-2 div{
+        border-bottom: #333 dashed 1px;
+        padding: 1.2rem 1rem;    
+    }
+
+    section.introduction .grid-2 div:last-child{
+        border: none;
+    }
+
+    section.introduction h1 {
+        display: none;
+    }
+
+    .services .grid-3 div {
         border-bottom: #333 dashed 1px;
         padding: 1.2rem 1rem;
+    }
+
+    .grid-2 div:last-child{
+        border: none;
+    }
+
+    .grid-3 div:last-child{
+        border: none;
     }
 }
 
