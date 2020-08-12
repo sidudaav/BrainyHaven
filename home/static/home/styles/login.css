@@ -1,32 +1,23 @@
-.content-section {
-    position: absolute;
-    z-index: 1;
-    top: 10%;
-    left: 50%;
-    margin-top: 105px;
-    margin-left: -145px;
-    width: 300px;
-    height: 350px;
-    text-align: center;
-    transition: all 500ms;
-  }
+section.login {
+  height: 100vh;
+  width: 100%;
+}
 
-.showcase::after {
-    content: '';
-    height: 100vh;
-    width: 100%;
-    background-image: url('/static/home/images/brain_showcase.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: block;
-    filter: blur(20px);
-    -webkit-filter: blur(20px);
-    transition: all 500ms;
+.content-section {
+  position: relative;
+  top: 15%;
+  margin: auto;
+  width: 300px;
+  height: 350px;
+  text-align: center;
+}
+
+legend {
+  font-weight: 600;
 }
 
 .btn {
-  background-color: blue;
+  color: white;
 }
 
 
