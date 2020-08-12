@@ -159,6 +159,26 @@ section.introduction h1 {
     border-bottom: 5px double darkblue;
 }
 
+section.introduction a{
+    color: white
+}
+
+section.introduction a:hover {
+    text-decoration: none;
+}
+
+section.introduction .grid-2 div {
+    -webkit-transition: all 500ms ease; 
+    -moz-transition: all 500ms ease; 
+    -o-transition: all 500ms ease; 
+    -ms-transition: all 500ms ease; 
+    transition: all 500ms ease; 
+}
+
+section.introduction .grid-2 div:hover {
+    transform: scale(1.1);
+}
+
 
 @media (max-width: 700px) {
 	.counters .counters-container {
@@ -215,6 +235,10 @@ section.introduction h1 {
 
     section.introduction h1 {
         display: none;
+    }
+
+    section.introduction .grid-2 div:hover {
+        transform: none;
     }
 
     .services .grid-3 div {
