@@ -80,6 +80,6 @@ header {
 
 @media(max-height: 500px) {
     header {
-        height: 160vh;
+        height: 220vh;
     }
 }
