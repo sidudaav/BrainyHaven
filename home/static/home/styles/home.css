@@ -154,6 +154,11 @@ section.introduction .grid-2 {
     align-items: start;
 }
 
+section.introduction h1 {
+    padding-bottom: 1rem;
+    border-bottom: 5px double darkblue;
+}
+
 
 @media (max-width: 700px) {
 	.counters .counters-container {
