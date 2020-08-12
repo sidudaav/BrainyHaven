@@ -154,6 +154,7 @@ section.introduction .grid-2 {
     align-items: start;
 }
 
+
 @media (max-width: 700px) {
 	.counters .counters-container {
 		grid-template-columns: repeat(1, 1fr);
