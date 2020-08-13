@@ -1,13 +1,10 @@
-html,body  {
+body  {
 	background-color: lightgray;
 	text-align: center;
+	height: 100vh;
 } 
 
-h2{
-	color: blue;
-}
-
-h3{
+h1{
 	color: blue;
 }
 
@@ -43,9 +40,25 @@ h3{
 	background-color: red;
 }
 
-.square{
-}
-
 .circle{
 	border-radius: 50px;
+}
+
+div.rules {
+	text-align: center;
+	margin-top: 5rem;
+	font-weight: 600;
+}
+
+div.rules ul {
+    text-align: center;
+    list-style-position: inside;
+}
+div.rules li {
+	margin-top: 1rem;
+	font-size: 2rem;
+}
+
+div.game {
+	margin-top: 5rem;
 }
