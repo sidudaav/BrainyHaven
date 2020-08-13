@@ -37,10 +37,6 @@ class RiddleAdmin(admin.ModelAdmin):
     def hide(self, request, queryset):
         queryset.update(is_active=False) 
 
-class IPAdmin(admin.ModelAdmin):
-    list_display = ['ip_address', 'pub_date']
-
 admin.site.register(Pattern, PatternAdmin)
 admin.site.register(Analogy, AnalogyAdmin)
 admin.site.register(Riddle, RiddleAdmin)
-admin.site.register(IP, IPAdmin)
