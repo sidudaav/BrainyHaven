@@ -12,110 +12,21 @@
 {% block content %}
 <section class="patterns bg-blue">
     <div class="my-container">
+        {% for analogy in analogies %}
         <div class="grid-2">
             <div class="question">
                 <h1>
-                    If head is to cabbage, ear is to …
+                    {{ analogy.content }}
                 </h1>
             </div>
             <div class="answer">
                 <button data-action='view' class="answer-btn btn btn-primary">View Answer</button>
                 <h1 class="pattern-answer">
-                    Corn
+                    {{ analogy.answer }}
                 </h1>
             </div>
         </div>
-        <div class="grid-2">
-            <div class="question">
-                <h1>
-                    If pencil is to lead, pen is to …
-                </h1>
-            </div>
-            <div class="answer">
-                <button data-action='view' class="answer-btn btn btn-primary">View Answer</button>
-                <h1 class="pattern-answer">
-                    Ink
-                </h1>
-            </div>
-        </div>
-        <div class="grid-2">
-            <div class="question">
-                <h1>
-                    If car is to road, ship is to …
-                </h1>
-            </div>
-            <div class="answer">
-                <button data-action='view' class="answer-btn btn btn-primary">View Answer</button>
-                <h1 class="pattern-answer">
-                    Water
-                </h1>
-            </div>
-        </div>
-        <div class="grid-2">
-            <div class="question">
-                <h1>
-                    If Jefferson is to Tom, Franklin is to …
-                </h1>
-            </div>
-            <div class="answer">
-                <button data-action='view' class="answer-btn btn btn-primary">View Answer</button>
-                <h1 class="pattern-answer">
-                    Ben
-                </h1>
-            </div>
-        </div>
-        <div class="grid-2">
-            <div class="question">
-                <h1>
-                    If passenger is to bus, arrow is to …
-                </h1>
-            </div>
-            <div class="answer">
-                <button data-action='view' class="answer-btn btn btn-primary">View Answer</button>
-                <h1 class="pattern-answer">
-                    Archer
-                </h1>
-            </div>
-        </div>
-        <div class="grid-2">
-            <div class="question">
-                <h1>
-                    If China is to Asia, Bolivia is to …
-                </h1>
-            </div>
-            <div class="answer">
-                <button data-action='view' class="answer-btn btn btn-primary">View Answer</button>
-                <h1 class="pattern-answer">
-                    South America
-                </h1>
-            </div>
-        </div>
-        <div class="grid-2">
-            <div class="question">
-                <h1>
-                    If food is to plate, drink is to …
-                </h1>
-            </div>
-            <div class="answer">
-                <button data-action='view' class="answer-btn btn btn-primary">View Answer</button>
-                <h1 class="pattern-answer">
-                    Glass
-                </h1>
-            </div>
-        </div>
-        <div class="grid-2">
-            <div class="question">
-                <h1>
-                    If cow is to calf, sheep is to …
-                </h1>
-            </div>
-            <div class="answer">
-                <button data-action='view' class="answer-btn btn btn-primary">View Answer</button>
-                <h1 class="pattern-answer">
-                    Lamb
-                </h1>
-            </div>
-        </div>
+        {% endfor %}
     </div>
 </section>
 {% endblock %}

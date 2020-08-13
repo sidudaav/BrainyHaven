@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
+from .models import Pattern, Analogy, Riddle
 
 def home(request):
     context = {
@@ -28,15 +29,22 @@ def program(request):
 
 @login_required
 def patterns(request):
+    patterns  = Pattern.objects.all()
+
     context = {
         'title': 'Patterns',
+        'patterns': patterns
     }
+
     return render(request, 'home/patterns.html', context)
 
 @login_required
 def analogies(request):
+    analogies  = Analogy.objects.all()
+
     context = {
         'title': 'Analogies',
+        'analogies': analogies
     }
     return render(request, 'home/analogies.html', context)
 
@@ -56,7 +64,9 @@ def memory(request):
 
 @login_required
 def riddles(request):
+    riddles  = Riddle.objects.all()
     context = {
         'title': 'Riddles',
+        'riddles': riddles,
     }
     return render(request, 'home/riddles.html', context)
