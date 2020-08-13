@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Pattern, Analogy, Riddle, IP
+from .models import Pattern, Analogy, Riddle
 
 class PatternAdmin(admin.ModelAdmin):
     list_display = ['content', 'answer', 'is_active']
