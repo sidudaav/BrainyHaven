@@ -17,3 +17,10 @@ class Riddle(models.Model):
     content = models.CharField(null=True, max_length=200)
     answer = models.CharField(null=True, max_length=100)
     is_active = models.BooleanField(default=True)
+
+class IP(models.Model):
+    pub_date = models.DateTimeField('date published')
+    ip_address = models.GenericIPAddressField()
+
+    class Meta:
+        verbose_name_plural = "IP Addresses"

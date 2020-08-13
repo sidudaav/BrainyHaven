@@ -1,20 +1,24 @@
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
-from .models import Pattern, Analogy, Riddle
+from .models import Pattern, Analogy, Riddle, IP
+from .utils import save_client_ip
 
 def home(request):
+    save_client_ip(request)
     context = {
         'title': 'Home',
     }
     return render(request, 'home/home.html', context)
 
 def about(request):
+    save_client_ip(request)
     context = {
         'title': 'About',
     }
     return render(request, 'home/about.html', context)
 
 def science(request):
+    save_client_ip(request)
     context = {
         'title': 'Science',
     }
@@ -22,6 +26,7 @@ def science(request):
 
 @login_required
 def program(request):
+    save_client_ip(request)
     context = {
         'title': 'Program'
     }
@@ -30,7 +35,7 @@ def program(request):
 @login_required
 def patterns(request):
     patterns  = Pattern.objects.filter(is_active=True)
-
+    save_client_ip(request)
     context = {
         'title': 'Patterns',
         'patterns': patterns
@@ -41,7 +46,7 @@ def patterns(request):
 @login_required
 def analogies(request):
     analogies  = Analogy.objects.filter(is_active=True)
-
+    save_client_ip(request)
     context = {
         'title': 'Analogies',
         'analogies': analogies
@@ -50,6 +55,7 @@ def analogies(request):
 
 @login_required
 def puzzles(request):
+    save_client_ip(request)
     context = {
         'title': 'Puzzles',
     }
@@ -57,6 +63,7 @@ def puzzles(request):
 
 @login_required
 def memory(request):
+    save_client_ip(request)
     context = {
         'title': 'Memory',
     }
@@ -64,6 +71,7 @@ def memory(request):
 
 @login_required
 def riddles(request):
+    save_client_ip(request)
     riddles  = Riddle.objects.filter(is_active=True)
     context = {
         'title': 'Riddles',
