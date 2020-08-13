@@ -75,13 +75,13 @@ header {
 }
 
 .team .team_member h3{
-    color: lightblue;
+    color: rgb(62, 187, 236);
     font-size: 26px;
     margin-top: 50px;
 }
 
 .team .team_member p.role{
-    color: #ccc;
+    color: lightblue;
     margin: 12px 0;
     font-size: 12px;
     text-transform: uppercase;
