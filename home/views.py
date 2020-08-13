@@ -29,7 +29,7 @@ def program(request):
 
 @login_required
 def patterns(request):
-    patterns  = Pattern.objects.all(is_active=True)
+    patterns  = Pattern.objects.filter(is_active=True)
 
     context = {
         'title': 'Patterns',
@@ -40,7 +40,7 @@ def patterns(request):
 
 @login_required
 def analogies(request):
-    analogies  = Analogy.objects.all(is_active=True)
+    analogies  = Analogy.objects.filter(is_active=True)
 
     context = {
         'title': 'Analogies',
@@ -64,7 +64,7 @@ def memory(request):
 
 @login_required
 def riddles(request):
-    riddles  = Riddle.objects.all(is_active=True)
+    riddles  = Riddle.objects.filter(is_active=True)
     context = {
         'title': 'Riddles',
         'riddles': riddles,
