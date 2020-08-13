@@ -55,7 +55,6 @@ def puzzles(request):
 
 @login_required
 def memory(request):
-    save_client_ip(request)
     context = {
         'title': 'Memory',
     }
