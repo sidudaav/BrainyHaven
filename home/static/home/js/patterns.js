@@ -1,9 +1,14 @@
 $(document).ready(function () {
     $('button.answer-btn').on("click", function (e) {
-        answer = $(this).parent().find('h1.pattern-answer')
-        answer.fadeToggle(100)
+        answer = $(this).parent().find('.pattern-answer')
 
         var previous_action = $(this).data('action');
+
+        if (previous_action == 'view') {
+            answer.css({ "display": "inline-block" });
+        } else {
+            answer.css({ "display": "none" });
+        }
 
         // toggle data-action
         $(this).data('action', previous_action == 'view' ? 'close' : 'view');
