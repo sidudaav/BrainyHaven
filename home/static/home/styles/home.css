@@ -233,10 +233,6 @@ section.introduction .grid-2 div:hover {
         border: none;
     }
 
-    section.introduction h1 {
-        display: none;
-    }
-
     section.introduction .grid-2 div:hover {
         transform: none;
     }
