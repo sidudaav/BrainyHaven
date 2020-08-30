@@ -20,14 +20,12 @@ def science(request):
     }
     return render(request, 'home/science.html', context)
 
-@login_required
 def program(request):
     context = {
         'title': 'Program'
     }
     return render(request, 'home/program.html', context)
 
-@login_required
 def patterns(request):
     patterns  = Pattern.objects.filter(is_active=True)
     context = {
@@ -37,7 +35,6 @@ def patterns(request):
 
     return render(request, 'home/patterns.html', context)
 
-@login_required
 def analogies(request):
     analogies  = Analogy.objects.filter(is_active=True)
     context = {
@@ -46,21 +43,18 @@ def analogies(request):
     }
     return render(request, 'home/analogies.html', context)
 
-@login_required
 def puzzles(request):
     context = {
         'title': 'Puzzles',
     }
     return render(request, 'home/puzzles.html', context)
 
-@login_required
 def memory(request):
     context = {
         'title': 'Memory',
     }
     return render(request, 'home/memory.html', context)
 
-@login_required
 def riddles(request):
     riddles  = Riddle.objects.filter(is_active=True)
     context = {
