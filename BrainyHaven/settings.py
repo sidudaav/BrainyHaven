@@ -23,6 +23,7 @@ ALLOWED_HOSTS = ['*', 'https://brainyhaven.herokuapp.com/']
 
 INSTALLED_APPS = [
     'home.apps.HomeConfig',
+    'api.apps.ApiConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -30,6 +31,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'crispy_forms',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
