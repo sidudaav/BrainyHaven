@@ -1,5 +1,5 @@
 header {
-    height: 120vh;
+    height: 80vh;
     width: 100%;
 }
 
@@ -125,9 +125,15 @@ h3 {
     font-weight: 600;
 }
 
+@media(max-width: 750px) {
+    header {
+        height: 100vh;
+    }
+}
+
 @media(max-width: 560px) {
     header {
-        height: 190vh;
+        height: 140vh;
     }
 
     .content {
@@ -168,6 +174,20 @@ h3 {
         margin-right: 0px;
     }
 }
+
+@media(max-width: 500px) {
+    header {
+        height: 170vh;
+    }
+}
+
+@media(max-width: 400px) {
+    header {
+        height: 190vh;
+    }
+}
+
+
 
 @media(max-width: 400px) and (max-height:800px) {
     header {
